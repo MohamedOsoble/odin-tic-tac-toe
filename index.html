@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="container">
+        <div id="header">
+            <h1>Tic-Tac-Toe</h1>
+            <div id="scoreboard" style="display: none">
+                <div id="player-one-score"></div><br>
+                <div id="player-two-score"></div><br>
+            </div>
+        </div>
 
+        <div id="game-type">
+            <button id="player" class="game-button" style="vertical-align:middle"><span>Vs. Player </span></button>
+            <!-- <button id="computer" class="game-button" style="vertical-align:middle"><span>Vs. Computer </span></button> -->
+        </div>
+
+        <div id="players-input" style="display: none">
+            <div id="player-one-container"><label for="player-one" style="color:white">Player One:</label>
+            <input type="text" id="player-one"><br></div>
+            <div id="player-two-container"><label for="player-two" style="color:white">Player Two:</label>
+            <input type="text" id="player-two"><br></div>
+            <button id="player-input-submit" class="game-button" style="vertical-align:middle"><span>Start Game</span></button>
+        </div>
+
+        <div id="end-round" style="display: none">
+            <button id="play-again-btn" class="end-game-button" style="vertical-align:middle"><span>Play Again</span></button>
+            <button id="restart-btn" class="end-game-button" style="vertical-align:middle"><span>Restart</span></button>
+            <button id="end-game-btn" class="end-game-button" style="vertical-align:middle"><span>End Game</span></button>
+        </div>
+
+        <div id="game-field">
+        </div>
+    </div>
 </body>
 </html>
